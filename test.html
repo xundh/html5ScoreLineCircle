@@ -1,0 +1,44 @@
+<html>
+<head>
+<script src='jquery-1.10.0.min.js'></script>
+<script src='jsUtil.js'></script>
+<script src='draw.js'></script>
+</head>
+<body>
+<div id="container"></div>
+<script>
+$("#container").drawLineCircle({
+    radius:80,
+    data: [
+        { 'title': '信用状况', 'value': 75 },
+        { 'title': '抵押物评估', 'value': 70 },
+        { 'title': '家访', 'value': 75 },
+        { 'title': '面审分值', 'value': 50 },
+        { 'title': '职业情况', 'value': 65 },
+        { 'title': '稳定性', 'value': 75 },
+        { 'title': '经济能力', 'value': 75 },
+        { 'title': '基本素质', 'value': 75 }
+    ]
+});
+
+/*
+* 使用是，定义一个div#container，按124行代码调用即可。
+* 参数说明及默认值：
+  radius: 90,   //圆半径 
+  width: 360,   //画板宽
+  height: 200,  //画板高
+  border: 'border:0px solid #424533', //画板边框
+  circleBackCorlor: '#F7F7F7',      //圆的背景颜色
+  fontColor: '#000000',             //标签颜色
+  textPaddingLine: -7,              //标签离横线距离
+  lineColor: "#CBCBCB",             //线颜色
+  uom: '分',                         //值单位
+  valuePaddingLine: 13,             //分值离线距离
+  valueFillColor: '#88C276',        //值颜色
+  titleFont: '14px 微软雅黑 bold',  //标签字体
+  valueFont: '14px 宋体',             //值字体
+  data:[{'title':标签,'value':分值}]    //数据数组
+*/
+</script>
+</body>
+</html>
